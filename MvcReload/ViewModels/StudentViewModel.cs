@@ -12,10 +12,12 @@ namespace MvcReload.ViewModels
     {
         [Required]
         [Display(Name ="Prenom")]
+        [MinLength(5)]
         public string FirstName { get; set; }
 
         [Required]
         [Display(Name ="Nom")]
+        [MinLength(5)]
         public string LastName { get; set; }
 
         [Required]
